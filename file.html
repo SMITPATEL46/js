@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="fetch"></p>
+        <script>
+            let file = "file.txt"
+            fetch (file)
+            .then(x => file.text())
+            .then(y => document.getElementById("fetch").innerHTML = y);
+        </script>
+    </body>
+</html>
