@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<body>
+
+    <div id="myPlot" style="width:100%;max-width:700px"></div>
+
+    <script>
+        const xArray = [50, 40, 45, 26, 18];
+        const yArray = ["india", "France", "Spain", "USA", "Argentina"];
+        const barColors = ["red", "green","blue","orange","brown"];
+
+        const data = [{
+            x: xArray,
+            y: yArray,
+            type: "bar",
+            orientation: "h",
+            marker: { color: "blue" }
+        }];
+
+        const layout = { title: "World" };
+
+        Plotly.newPlot("myPlot", data, layout);
+    </script>
+
+</body>
+
+</html>
